@@ -1,0 +1,18 @@
+.wrapper {
+  border: none;
+  background-color: var(--violet);
+
+  font-size: var(--font-size-bod);
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--light-violet);
+  }
+
+  display: grid;
+  place-content: center;
+}

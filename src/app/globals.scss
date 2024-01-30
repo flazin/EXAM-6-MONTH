@@ -1,0 +1,110 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+$tablet-background-image: 768px;
+$mobile-background-image: 375px;
+
+// CSS Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+// Global baseline styles
+:root {
+  // Home
+  --background: hsl(210deg 22% 96%);
+  --search-and-grid-background: hsl(0deg 0% 100%);
+  --font-color: hsl(219deg 29% 14%);
+  --unchecked-background: hsl(210deg 4% 91%);
+
+  // Detail
+  --intro-font-color: hsl(214deg 17% 51%);
+  --button-font-color: hsl(235deg 69% 61%);
+  --button-background: hsl(236deg 70% 96%);
+  --hover-background: hsl(235deg 68% 86%);
+
+  // Mobile Filter Icon
+  --fill-color: hsl(214deg 17% 51%);
+
+  --violet: hsl(235deg 69% 61%);
+  --light-violet: hsl(235deg 82% 77%);
+  --very-dark-blue: hsl(219deg 29% 14%); //**
+  --midnight: hsl(220deg 29% 10%); //
+
+  --white: hsl(0deg 0% 100%); //**
+  --light-gray: hsl(210deg 22% 96%); //
+  --gray: hsl(212deg 23% 69%);
+  --dark-gray: hsl(214deg 17% 51%);
+
+  //font sizes
+  --font-size-heading-1: 28px;
+  --font-size-heading-2: 24px;
+  --font-size-heading-3: 20px;
+  --font-size-heading-4: 14px;
+  --font-size-body: 16px;
+
+  //line heights
+  --line-height-heading-1: 34px;
+  --line-height-heading-2: 29px;
+  --line-height-heading-3: 24px;
+  --line-height-heading-4: 18px;
+  --line-height-body: 26px;
+}
+
+[data-theme='dark'] {
+  // Home
+  --background: hsl(220deg 29% 10%);
+  --search-and-grid-background: hsl(219deg 29% 14%);
+  --font-color: hsl(0deg 0% 100%);
+  --unchecked-background: hsl(220deg 16% 23%);
+
+  // Detail
+  --intro-font-color: hsl(212deg 23% 69%);
+  --button-font-color: hsl(0deg 0% 100%);
+  --button-background: hsl(220deg 16% 22%);
+  --hover-background: hsl(216deg 8% 35%);
+
+  // Mobile Filter Icon
+  --fill-color: hsl(0deg 0% 100%);
+}

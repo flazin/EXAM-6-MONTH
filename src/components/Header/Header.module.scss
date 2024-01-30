@@ -1,0 +1,61 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+.wrapper {
+  grid-area: header;
+
+  position: relative;
+  height: 160px;
+  background-image: url('/desktop/bg-pattern-header.svg');
+  background-position: 0%;
+  background-size: cover;
+  background-color: var(--background);
+
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-top: 45px;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 42px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+
+    height: 136px;
+
+    background-image: url('/mobile/bg-pattern-header.svg');
+  }
+}
+
+.superheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.notonmobile {
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.onlyonmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: revert;
+  }
+}
